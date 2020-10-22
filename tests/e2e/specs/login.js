@@ -17,7 +17,7 @@ describe('Login',()=>{
 
     //Verifica que muestre alerta al ingresar credenciales erroneas
     
-    it('mostrar el error al tener credenciales erroneas',()=>{
+    it('mostrar alert al tener credenciales erroneas',()=>{
         cy.visit('/login')
         cy.get('.navbar-burger > :nth-child(2)').click()
         cy.get('#email').type('hola@mundo.com')
