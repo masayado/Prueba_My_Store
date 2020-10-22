@@ -16,17 +16,5 @@ describe('Login',()=>{
     })
 
     //Verifica que muestre alerta al ingresar credenciales erroneas
-    
-    it('mostrar el error al tener credenciales erroneas',()=>{
-        cy.visit('/login')
-        cy.get('.navbar-burger > :nth-child(2)').click()
-        cy.get('#email').type('hola@mundo.com')
-        cy.get('#password').type('password')
-        cy.get('.button').click()
-        //cy.contains('Usuario o Contraseña incorrectos')
-        cy.on('window:alert',(txt)=>{
-            //Mocha assertions
-            expect(txt).to.contains('Usuario o Contraseña incorrectos');
-         })
-    })
+
 })
