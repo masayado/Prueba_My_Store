@@ -6,4 +6,4 @@ describe('Login',()=>{
         cy.get('.navbar-burger > :nth-child(2)').click()
         cy.get('input').type('Bote')
         })
-})
+});
